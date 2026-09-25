@@ -23,33 +23,22 @@ A web-based **Stock Market System** developed using **Java Servlets, JSP, MySQL,
 
 ---
 
-## 🖥️ Screenshots
+## 🖥️ Project Screenshots
 
-### 🔐 Login
-
-![Login](screenshots/login.png)
+Here are some screenshots showcasing the user interface and key functionality of the Stock Market System.
 
 ### 🏠 Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+The dashboard provides users with access to the major stock market and investment-related modules of the application.
+
+![Dashboard](screenshots/IMG-20250401-WA0005.jpg)
 
 ### 📊 Stock Market
 
-![Stock Market](screenshots/stock.png)
+The stock market module displays market-related information integrated through external market data APIs.
 
-### 📈 Technical Analysis
+![Stock Market](screenshots/IMG-20250401-WA0000.jpg)
 
-![Technical Analysis](screenshots/technicals.png)
-
-### 📋 Fundamental Analysis
-
-![Fundamental Analysis](screenshots/fundamentals.png)
-
-### ⭐ Watchlist
-
-![Watchlist](screenshots/watchlist.png)
-
-> More screenshots can be added to the `screenshots` folder as the project showcase grows.
 
 ---
 
