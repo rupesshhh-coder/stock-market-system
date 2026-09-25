@@ -1,8 +1,8 @@
 # 📈 Stock Market System
 
-### 🎓 Final-Year BCA Project
+### 🎓 Final-Year Project
 
-A web-based **Stock Market System** developed using **Java Servlets, JSP, MySQL, and external market data APIs**. The application provides stock market information along with analysis and investment-related modules.
+A web-based **Stock Market System** developed using **Java Servlets, JSP, MySQL, and external APIs**. The application provides stock market information, analysis features, and multiple investment-related modules through a simple web interface.
 
 ---
 
@@ -10,14 +10,13 @@ A web-based **Stock Market System** developed using **Java Servlets, JSP, MySQL,
 
 * 🔐 User Registration & Login
 * 📊 Stock Market Data
-* 📈 Technical Analysis
-* 📋 Fundamental Analysis
 * ⭐ Personalized Watchlist
-* 🏦 Exchange-Traded Funds (ETFs)
 * 💰 Mutual Funds
-* 🏷️ Initial Public Offerings (IPOs)
-* 💵 Systematic Investment Plans (SIPs)
-* 🏛️ Government Securities
+* 💵 SIP Management
+* 🏦 ETFs
+* 📈 Fundamental Analysis
+* 📉 Technical Analysis
+* 🏷️ IPO Information
 * 🌐 External API Integration
 * 🗄️ MySQL Database Integration
 
@@ -27,42 +26,34 @@ A web-based **Stock Market System** developed using **Java Servlets, JSP, MySQL,
 
 ### 🏠 Dashboard
 
-The dashboard provides users with access to the major stock market and investment-related modules of the application.
+The dashboard provides easy access to the main features of the application, including **Watchlist, Stock Market, Mutual Funds, SIP, ETF, Fundamental Analysis, and Technical Analysis**.
 
 <p align="center">
-  <img src="screenshots/IMG-20250401-WA0005.jpg" alt="Stock Market System Dashboard" width="500">
+  <img src="screenshots/IMG-20250401-WA0005.jpg" alt="Stock Market System Dashboard" width="700">
 </p>
 
-> Additional project screenshots are available in the `screenshots` folder.
-
-
+> Additional project screenshots are available in the [screenshots](screenshots) folder.
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology    | Usage                       |
-| ------------- | --------------------------- |
-| Java 8        | Backend Development         |
-| Servlets      | Request Handling            |
-| JSP           | Web Pages / UI              |
-| MySQL         | Database                    |
-| JDBC          | Database Connectivity       |
-| Maven         | Project Management          |
-| Apache Tomcat | Application Server          |
-| JSTL          | JSP Support                 |
-| Gson          | JSON Processing             |
-| org.json      | JSON Processing             |
-| Jsoup         | Web Data Processing         |
-| Commons DBCP  | Database Connection Pooling |
+| Technology      | Purpose               |
+| --------------- | --------------------- |
+| Java 8          | Backend Development   |
+| Servlets        | Request Handling      |
+| JSP             | Web Interface         |
+| MySQL           | Database              |
+| JDBC            | Database Connectivity |
+| Maven           | Project Management    |
+| Apache Tomcat   | Application Server    |
+| Gson / org.json | JSON Processing       |
+| Jsoup           | Web Data Processing   |
 
-### APIs / Data Sources
+### APIs
 
 * Alpha Vantage API
 * Polygon API
-* RBI-related web data processing
-
-> API availability and usage limits depend on the respective service providers.
 
 ---
 
@@ -75,19 +66,16 @@ StockMarket
 │   └── main
 │       ├── java
 │       │   └── com.nt
-│       │       ├── CreateSIPServlet.java
-│       │       ├── ETFServlet.java
-│       │       ├── GovernmentSecurityServlet.java
-│       │       ├── IPOServlet.java
 │       │       ├── LoginServlet.java
-│       │       ├── LogoutServlet.java
-│       │       ├── MutualFundServlet.java
-│       │       ├── NavigationServlet.java
 │       │       ├── SignupServlet.java
-│       │       ├── StockDataFetcher.java
 │       │       ├── StockServlet.java
-│       │       ├── UserDAO.java
-│       │       └── WatchlistServlet.java
+│       │       ├── StockDataFetcher.java
+│       │       ├── WatchlistServlet.java
+│       │       ├── ETFServlet.java
+│       │       ├── MutualFundServlet.java
+│       │       ├── IPOServlet.java
+│       │       ├── CreateSIPServlet.java
+│       │       └── GovernmentSecurityServlet.java
 │       │
 │       └── webapp
 │           ├── dashboard.jsp
@@ -99,9 +87,7 @@ StockMarket
 │           ├── mf.jsp
 │           ├── ipo.jsp
 │           ├── sip.jsp
-│           ├── g_sec.jsp
-│           ├── login.jsp
-│           └── signup.jsp
+│           └── ...
 │
 ├── pom.xml
 └── README.md
@@ -109,101 +95,46 @@ StockMarket
 
 ---
 
-## ⚙️ Requirements
+## ⚙️ Local Setup
 
-Before running the project, make sure you have:
+### Requirements
 
-* Java 8 or compatible JDK
-* Apache Maven
+* Java 8
+* Maven
 * MySQL
 * Apache Tomcat
-* Eclipse / Spring Tool Suite or another Java IDE
-* Required API keys
+* Eclipse or any Java IDE
+
+### Run Locally
+
+1. Clone the repository.
+2. Open the project in Eclipse or your preferred IDE.
+3. Configure the MySQL database.
+4. Configure the required API keys.
+5. Run the application using Apache Tomcat.
 
 ---
 
-## ▶️ How to Run
+## 🔒 Security
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/rupesshhh-coder/stock-market-system.git
-```
-
-### 2. Open the Project
-
-Open the project in Eclipse or your preferred Java IDE.
-
-### 3. Configure MySQL
-
-Create the required MySQL database and tables used by the application.
-
-Update the database configuration with your own:
-
-```text
-Database URL
-Username
-Password
-```
-
-### 4. Configure API Keys
-
-The GitHub version does not contain real API keys.
-
-Add your own API keys for the required external services before running the application.
-
-### 5. Build the Project
-
-```bash
-mvn clean package
-```
-
-### 6. Deploy
-
-Deploy the generated WAR file to Apache Tomcat.
-
-The application can then be accessed through:
-
-```text
-http://localhost:8080/StockMarket
-```
+API keys and database credentials are not included in the repository. Configure your own credentials before running the project.
 
 ---
 
-## 🔒 Security Note
+## 📚 Key Learning
 
-For security reasons, real database passwords and API keys are **not included in this repository**.
-
-Before running the application, configure your own credentials and API keys locally.
-
----
-
-## 📚 What I Learned
-
-Through this project, I gained practical experience in:
-
-* Java web application development
-* Servlet and JSP development
-* MySQL database connectivity
-* JDBC
-* API integration
+* Java web development using Servlets and JSP
+* JDBC and MySQL integration
+* External API integration
 * JSON data processing
-* Technical and fundamental analysis concepts
-* User authentication
-* Watchlist functionality
-* Maven project management
-* Application deployment basics
-* Team coordination and project development
+* User authentication and watchlist functionality
+* Maven and Tomcat application setup
 
 ---
 
 ## 🎓 Academic Project
 
-**Project:** Stock Market System
-**Course:** Bachelor of Computer Applications (BCA)
-**Type:** Final-Year Academic Project
-
-This project was developed as part of my **BCA final-year project** to gain practical experience in Java web development, database integration, API integration, and building a complete web-based application.
+This project was developed as a **Final-Year Academic Project** to gain practical experience in Java web development, database integration, API integration, and building a complete web application.
 
 ---
 
@@ -211,8 +142,4 @@ This project was developed as part of my **BCA final-year project** to gain prac
 
 **Rupesh Ghadge**
 
-GitHub: [rupesshhh-coder](https://github.com/rupesshhh-coder)
-
----
-
-⭐ If you find this project useful, feel free to explore the repository.
+⭐ Thanks for visiting the project!
