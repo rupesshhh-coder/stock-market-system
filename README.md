@@ -30,7 +30,7 @@ A web-based **Stock Market System** developed using **Java Servlets, JSP, MySQL,
 The dashboard provides users with access to the major stock market and investment-related modules of the application.
 
 <p align="center">
-  <img src="screenshots/IMG-20250401-WA0001.jpg" alt="Stock Market System Dashboard" width="700">
+  <img src="screenshots/IMG-20250401-WA0005.jpg" alt="Stock Market System Dashboard" width="500">
 </p>
 
 > Additional project screenshots are available in the `screenshots` folder.
